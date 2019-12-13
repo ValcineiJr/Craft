@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Craft</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<div class="container">
+<div class="btn-inv"></div>  
+        <div class="pesq">
+            <form action="">  
+                <input type="text">               
+            </form>
+        </div>    
+    <div class="btn-craft"></div>
+    <div class="inv-box">
+        <div class="item bruta auto">
+            <img class="auto" src="img/madeira bruta.png" alt="">
+            <div class="quant bruta"><span>0</span></div>
+        </div>
+        <div class="item madeira">
+            <img src="img/madeira processada.png" alt="">
+            <div class="quant processada"><span>0</span></div>
+        </div>
+        <div class="item mesa">
+            <img src="img/mesa.png" alt="">
+            <div class="quant"><span>0</span></div>
+        </div>
+        <div class="item graveto none">
+            <img src="img/graveto.png" alt="">
+            <div class="quant graveto"><span>0</span></div>
+        </div>
+        <div class="item picMadeira none">
+            <img src="img/picMadeira.png" alt="">
+            <div class="quant picMadeira"><span>0</span></div>
+        </div>
+        <div class="item picPedra none">
+            <img src="img/picPedra.png" alt="">
+            <div class="quant picPedra"><span>0</span></div>
+        </div>
+        <div class="item pedregulho2 ">
+            <img class="auto" src="img/pedregulho.png" alt="">
+            <div class="quant pedregulho2"><span>0</span></div>
+        </div>
+    </div>
+</div>
+    <div class="info">
+        <div class="img"><img src="img/madeira processada.png" alt=""></div>
+        <div class="nome">Madeira Processada</div>
+        <div class="desc"><p>Use Madeira processada para começar a craftar</p></div>
+        <div class="qt">Sua Quantidade: <span>0</span></div>        
+    </div>
+    <div class="mat">
+        <div class="mat-img madeira1"><img src="img/madeira bruta.png" alt="">
+            <div id="myProgress"><div class="myBar" id="barraBruta"></div></div>
+        </div>
+        <div class="mat-img pedregulho"><img src="img/pedregulho.png" alt="">
+            <div id="myProgress"><div class="myBar" id="barraPedra"></div></div>
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
